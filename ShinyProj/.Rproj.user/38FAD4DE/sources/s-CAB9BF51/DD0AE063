@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1599045993246.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2536862778",
+    "id" : "DD0AE063",
+    "lastKnownWriteTime" : 1599046588,
+    "last_content_update" : 1599046588571,
+    "path" : "~/Desktop/Work/Training/R Training/ShinyProj/Modules/tab_1_ui.R",
+    "project_path" : "Modules/tab_1_ui.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
