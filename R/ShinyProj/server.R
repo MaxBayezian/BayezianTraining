@@ -17,7 +17,7 @@ server <- function(input, output) {
     
     # Extracting Outputs number
     rv$outputs <- tab_1_return$outputs
-    rv$reset_num <- rv$reset_num + 1
+    # rv$reset_num <- rv$reset_num + 1
     
     
     # Removing ui
@@ -26,12 +26,18 @@ server <- function(input, output) {
     # Inserting ui
     insertUI(selector = '#tab_2_container', 
              ui = tags$div(
-               paste('second_tab', rv$reset_num, sep = '_') %>% tab_2_ui(num = rv$outputs),
-                           id = 'tab_2_inputs')
-               
-             )
+               'secondtab' %>% tab_2_ui(num = rv$outputs),
+               id = 'tab_2_inputs')
+             
+    )
     
   })
   
   
 }
+
+# tags$div(
+#   paste('second_tab', rv$reset_num, sep = '_') %>% tab_2_ui(num = rv$outputs),
+#   id = 'tab_2_inputs')
+# 
+# )

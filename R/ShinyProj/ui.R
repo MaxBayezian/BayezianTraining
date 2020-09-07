@@ -1,14 +1,15 @@
 #### UI
 
-
-# Hi joe
 library(shinydashboard)
 library(shinyjs)
+library(shinyEventLogger)
 
 
 # Source scripts
 source('./Modules/tab_1_ui.R')
 
+# set_logging()
+# set_logging_session()
 
 header_content <- dashboardHeader(
   title = 'Shiny test'
@@ -29,7 +30,10 @@ body_content <- dashboardBody(
             tab_1_ui('first-tab')),
   
     tabItem(tabName = '2',
-            tags$div(id = 'tab_2_container'))
+            box(
+              width = 6,
+              tags$div(id = 'tab_2_container'))
+    )
   )
   
 )

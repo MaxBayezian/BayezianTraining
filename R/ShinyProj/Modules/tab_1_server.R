@@ -12,5 +12,19 @@ tab_1 <- function(input, output, session){
     
   })
   
+  observeEvent(input$inputs_tab2, {
+    log_event(input$inputs_tab2)
+    if(!is.null(input$inputs_tab2)){
+      if(input$inputs_tab2 < 1){
+        disable(input$go_button)
+      } else {
+        enable(input$go_button)
+      }
+    }
+    
+    
+  })
+  
+  
   return(rv)
 }
